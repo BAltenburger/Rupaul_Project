@@ -14,8 +14,22 @@ library(tidyr)
 
 ```
 
-```{r}
+```{r warning=FALSE}
 rpdr_contestants %>%
-  write.csv()
+  separate(hometown, c('hometown', 'homestate'),',') %>%
+  write.csv(., file = "~/Rupaul_Project/episodes.csv")
+
+
 ```
 
+```{r}
+rpdr_ep %>%
+  separate(airdate, c('year','month', 'date'), '-')%>%
+  write.csv(., file = "~/Rupaul_Project/episodes.csv")
+```
+
+```{r}
+rpdr_contep %>%
+  write.csv(.,file = "~/Rupaul_Project/constestants_ep.csv")
+
+```
