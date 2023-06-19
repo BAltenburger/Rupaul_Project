@@ -1,0 +1,21 @@
+---
+title: "Data_Collection"
+output: html_document
+date: "2023-06-13"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dragracer)
+library(tibble)
+library(dplyr)
+library(tidyr)
+
+```
+
+```{r}
+rpdr_contestants %>%
+  write.csv()
+```
+
