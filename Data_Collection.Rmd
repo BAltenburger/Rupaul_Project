@@ -16,7 +16,6 @@ library(tidyr)
 
 ```{r warning=FALSE}
 rpdr_contestants %>%
-  separate(hometown, c('hometown', 'homestate'),',') %>%
   write.csv(., file = "~/Rupaul_Project/episodes.csv")
 
 
@@ -24,7 +23,6 @@ rpdr_contestants %>%
 
 ```{r}
 rpdr_ep %>%
-  separate(airdate, c('year','month', 'date'), '-')%>%
   write.csv(., file = "~/Rupaul_Project/episodes.csv")
 ```
 
