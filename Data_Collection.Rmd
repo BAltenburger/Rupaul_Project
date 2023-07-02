@@ -15,19 +15,22 @@ library(tidyr)
 ```
 
 ```{r warning=FALSE}
+setwd("C:/Users/betsy/Rupaul_Project")
+getwd()
+
 rpdr_contestants %>%
-  write.csv(., file = "~/Rupaul_Project/episodes.csv")
+  write.csv(., file = "~/contestants.csv")
 
 
 ```
 
 ```{r}
 rpdr_ep %>%
-  write.csv(., file = "~/Rupaul_Project/episodes.csv")
+  write.csv(., file = "~/episodes.csv")
 ```
 
 ```{r}
 rpdr_contep %>%
-  write.csv(.,file = "~/Rupaul_Project/constestants_ep.csv")
+  write.csv(.,file = "~/contestants_ep.csv")
 
 ```
