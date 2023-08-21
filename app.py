@@ -1,15 +1,15 @@
 
-from dash import Dash, html ,dash_table ,dcc
+from dash import Dash, html, dcc, callback, Output, Input
 
-app = Dash(__name__)
+app = dash.Dash(__name__)
 
 server = app.server
 
 
-app.layout = html.Div(
+app.layout = dash.html.Div(
     children =[
-        html.H1(children = "Betsy's Data Drag Race"),
-        html.P(
+        dash.html.H1(children ="Betsy's Data Drag Race"),
+        dash.html.P(
             children= (
                 "As a new fan to the show RuPaul's Drag Race, I recently learned about the massive community supporting the show."
 
