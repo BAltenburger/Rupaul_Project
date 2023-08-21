@@ -12,6 +12,7 @@ click==7.1.2
 colorama==0.4.4
 cycler==0.10.0
 dash==2.11.1
+
 dash-core-components==2.0.0
 dash-html-components==2.0.0
 dash-table==5.0.0
